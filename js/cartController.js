@@ -1,11 +1,10 @@
-function cart() {
+const setStorageCart = function cart() {
   if (!localStorage.getItem("cart")) {
     localStorage.setItem("cart", JSON.stringify([]));
   }
-}
+};
 
 function setCart() {
-  console.log("entro?");
   let badgeCart = domBadge;
   localStorage.setItem(
     "badgeCart",
