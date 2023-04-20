@@ -11,7 +11,7 @@ class Products {
   }
 
   async getProductById(id) {
-    const products = this.getProducts();
+    const products = await this.getProducts();
     const result = products.find((product) => product.id === id);
     return result;
   }

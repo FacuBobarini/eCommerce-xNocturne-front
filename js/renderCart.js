@@ -1,10 +1,9 @@
 function renderCartList() {
-  cart();
   setCart();
   let totalPayment = 0;
-  let cartList = JSON.parse(localStorage.getItem("cart"));
+  let cartList = storageGetCart();
   domInfo.innerHTML = "";
-  if (!cartList[0]) {
+  if (!cartList.cart[0]) {
     const products = document.createElement("h1");
     products.className = "cartProductContainer";
     products.innerHTML = `
@@ -12,7 +11,7 @@ function renderCartList() {
     `;
     domInfo.appendChild(products);
   } else {
-    cartList.forEach((product) => {
+    cartList.cart.forEach((product) => {
       totalPayment += product.price * product.quantity;
       const products = document.createElement("div");
       products.className = "cartProductContainer";

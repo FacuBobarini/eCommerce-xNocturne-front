@@ -1,5 +1,4 @@
 async function renderProductList() {
-  cart();
   setCart();
   const productList = await products.getProducts();
   productList.forEach((product) => {

@@ -1,17 +1,14 @@
-const setStorageCart = function cart() {
-  if (!localStorage.getItem("cart")) {
-    localStorage.setItem("cart", JSON.stringify([]));
-  }
-};
+function storageGetCart() {
+  return JSON.parse(localStorage.getItem("cart"));
+}
 
 function setCart() {
+  if (!storageGetCart()) {
+    localStorage.setItem("cart", JSON.stringify({ badge: 0, cart: [] }));
+  }
   let badgeCart = domBadge;
-  localStorage.setItem(
-    "badgeCart",
-    JSON.stringify(JSON.parse(localStorage.getItem("cart")).length)
-  );
-  const badge = JSON.parse(localStorage.getItem("badgeCart"));
-  badgeCart.innerHTML = `${badge > 0 ? badge : ""}`;
+  const badge = JSON.parse(localStorage.getItem("cart"));
+  badgeCart.innerHTML = `${badge.badge > 0 ? badge.badge : ""}`;
 }
 
 function cleanCart() {
@@ -20,30 +17,25 @@ function cleanCart() {
 }
 
 async function addProdductToCart(id) {
-  const productList = await products.getProducts();
-  let newProduct = productList.find((product) => product.id === id);
-  let cartList = JSON.parse(localStorage.getItem("cart"));
-  if (cartList.find((product) => product.id === newProduct.id)) {
-    cartList.forEach((product) => {
-      if (product.id === newProduct.id) product.quantity += 1;
+  const productList = await products.getProductById(id);
+  let { badge, cart } = storageGetCart();
+  if (cart.find((product) => product.id === productList.id)) {
+    cart.forEach((product) => {
+      if (product.id === productList.id) product.quantity += 1;
     });
   } else {
-    newProduct.quantity = 1;
-    cartList.push(newProduct);
+    productList.quantity = 1;
+    cart.push(productList);
   }
   Toast.fire({
     icon: "success",
     title: "Signed in successfully",
   });
 
-  localStorage.setItem("cart", JSON.stringify(cartList));
-  localStorage.setItem(
-    "badgeCart",
-    JSON.stringify(JSON.parse(localStorage.getItem("cart")).length)
-  );
+  localStorage.setItem("cart", JSON.stringify({ badge: badge + 1, cart }));
   Toast.fire({
     icon: "success",
-    title: `${newProduct.name} added to cart`,
+    title: `${productList.name} added to cart`,
   });
   setCart();
 }
