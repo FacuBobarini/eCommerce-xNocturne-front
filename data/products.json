@@ -1,0 +1,56 @@
+ [
+    {
+      "id": 0,
+      "name": "REAPER BADGE STANDARD",
+      "price": 25.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/DSC_6961_B_1320x1440.jpg?v=1677549381"
+    },
+    {
+        "id": 1,
+      "name": "TAKE CARE JET BLACK PREMIUM",
+      "price": 32.5,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/DSC_3876_B_1320x1439.jpg?v=1673389539"
+    },
+    {
+      "id": 2,
+      "name": "BLACK MAMBA CREWNECK",
+      "price": 49.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/DSC_6677_1_1320x1440.jpg?v=1676657633"
+    },
+    {
+      "id": 3,
+      "name": "TAKE CARE SNAPBACK",
+      "price": 39.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/DSC_5100_1_d5b3a5d5-8282-4dbf-ba80-0be9a020502d_1320x1440.jpg?v=1674868615"
+    },
+    {
+      "id": 4,
+      "name": "BOULEVARD HEAVYWEIGHT FLANNEL",
+      "price": 69.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/SCM4029-BOULEVARD-_black_1320x1440.jpg?v=1663106157"
+    },
+    {
+      "id": 5,
+      "name": "RECLUSE PULLOVER",
+      "price": 59.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/DSC_8758_B_1320x1439.jpg?v=1661186024"
+    },
+    {
+      "id": 6,
+      "name": "PROTECTOR TANK",
+      "price": 27.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/DSC_6037_B2_1320x1440.jpg?v=1651186174"
+    },
+    {
+      "id": 7,
+      "name": "ANGEL BOH PULLOVER GREY",
+      "price": 59.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/SCM3557_d4_1320x1440.jpg?v=1660927342"
+    },
+    {
+      "id": 8,
+      "name": "OVERNIGHTER BAG - XL CAMO",
+      "price": 63.99,
+      "img": "https://cdn.shopify.com/s/files/1/1096/0120/products/camo_D1_1320x1440.jpg?v=1603746790"
+    }
+  ]

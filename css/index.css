@@ -1,0 +1,659 @@
+body {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/*---------------------------------------------------- navbar style ----------------------------------------------------*/
+.anncontainer {
+    height: 25px;
+    background-color: teal;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nbContainer {
+    height: 60px;
+    font-family: "Encode Sans Expanded",
+        sans-serif;
+    background-color: rgba(240, 248, 255, 0.932);
+}
+
+.nbWrapper {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nbLeft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nbCenter {
+    flex: 1;
+    text-align: center;
+}
+
+.nbRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.nbSearchcontainer {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+
+.nbLogo {
+    font-weight: 800;
+}
+
+
+.linkHome {
+    color: #010606;
+}
+
+.linkHome:link {
+    text-decoration: none;
+}
+
+.linkHome:visited {
+    text-decoration: none;
+    color: rgb(15, 15, 15)
+}
+
+.linkHome:focus {
+    text-decoration: none;
+}
+
+.linkHome:hover {
+    opacity: 0.9;
+    color: #010606;
+}
+
+.linkHome:active {
+    text-decoration: none;
+}
+
+.linkHome:link {
+    text-decoration: none;
+}
+
+.linkCart:visited {
+    text-decoration: none;
+    color: rgb(15, 15, 15)
+}
+
+.linkCart:focus {
+    text-decoration: none;
+}
+
+.linkCart:hover {
+    opacity: 0.9;
+}
+
+.linkCart:active {
+    text-decoration: none;
+}
+
+
+
+
+.nbMenuitem {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.nbMenuitemCart {
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .nvContainer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nvWrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+/* ----------------------------------------------------categories stytle ----------------------------------------------------------------------------*/
+
+.catContainer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+
+.ciContainer {
+    flex: 1;
+    margin: 3px;
+    height: 70vh;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.ciContainer:hover {
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+.ciImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ciInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ciTitle {
+    color: #ffbf00;
+    margin: 20px;
+
+}
+
+.ciBtn {
+    border: 2px solid #010606;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.ciBtn:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.ciBtn:active {
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+    .catContainer {
+        flex-direction: column;
+    }
+}
+
+
+
+/* ---------------------------------------------------- footer style ----------------------------------------------------*/
+
+.fContainer {
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.932);
+}
+
+.fLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+.fDesc {
+    margin-bottom: 40px;
+}
+
+.fSocwrp {
+    display: flex;
+}
+
+.fSocIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #010606;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid brown;
+    margin: 3px;
+
+}
+
+.fCenter {
+    flex: 1;
+    padding: 20px;
+}
+
+.fTitle {
+    margin-bottom: 30px;
+}
+
+.fList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fLItem {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.fCItem {
+    margin: 5px;
+}
+
+.fRight {
+    flex: 1;
+    padding: 20px;
+}
+
+.fCItem {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fIcon {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.fPayment {
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .fContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .fSocwrp {
+        justify-content: center;
+    }
+
+
+}
+
+
+
+/*---------------------------------------------------- slider style ----------------------------------------------------*/
+
+
+.sliderwrap {
+    height: 100%;
+    display: flex;
+    background-color: brown;
+    color: #010606;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.simgcontainer {
+    width: 50%;
+    height: 100%;
+
+}
+
+.simage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 35% 5%;
+}
+
+.sinfocontainer {
+    max-width: 50%;
+    padding: 50px;
+
+}
+
+.stitle {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.sdesc {
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.sbtn {
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sbtn:hover {
+    transform: scale(1.1);
+    background-color: aliceblue;
+    transition: all 0.2s;
+}
+
+.sbtn:active {
+    transform: scale(1);
+    background-color: aliceblue;
+    transition: all 0.2s;
+}
+
+
+/*---------------------------------------------------- product list ----------------------------------------------------*/
+
+.psContainer {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(144, 150, 155);
+}
+
+.pContainer {
+    flex: 1;
+    border-radius: 5px;
+    margin: 5px;
+    min-width: 280px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.pImg {
+    flex: 1;
+    max-height: 330px;
+    border-radius: 10px;
+}
+
+.pInfo {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 228, 196, 0.2);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.pInfo:hover {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.pIcon {
+    color: rgb(92, 91, 91);
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+}
+
+.pIcon:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.pIcon:active {
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+
+/*---------------------------------- Cart ------------------------------------*/
+
+
+.crtWrap {
+    padding: 20px;
+}
+
+.crtTitle {
+    font-weight: 300;
+    text-align: center;
+}
+
+.crtTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.crtTopBtn {
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.crtTopBtnf {
+    border: none;
+    background-color: #010606;
+    color: aliceblue;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.crtTopText {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.crtBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crtInfo {
+    flex: 3;
+}
+
+.crtProduct {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.crtProductDetail {
+    flex: 2;
+    display: flex;
+}
+
+.crtPImg {
+    width: 200px;
+}
+
+.crtDetails {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+
+}
+
+.ctrPriceDetail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.crtProdAmntWrp {
+    display: flex;
+    align-items: center;
+    border: 2px solid #010606;
+    border-radius: 50px;
+
+}
+
+.crtProdAdd {
+    border-radius: 50px;
+    background-color: #010606;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.crtProdAdd:active {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+
+.crtProAmnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.crtProdPrice {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.crtHr {
+    background-color: gray;
+    border: none;
+    height: 1px;
+}
+
+.crtSummary {
+    flex: 1;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+}
+
+.crtSummaryTitle {
+    font-weight: 200;
+}
+
+.crtSummaryItem {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+
+}
+
+.crtSummaryItemTextt {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.SummaryBtn {
+    width: 100%;
+    border: 2px solid #010606;
+    font-size: 25px;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.SummaryBtn:hover {
+    opacity: 0.8;
+    background-color: aliceblue;
+}
+
+.SummaryBtn:active {
+    transform: scale(0.99);
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    .crtTop {
+        flex-direction: column;
+    }
+
+    .crtTopBtn {
+        margin: 10px;
+    }
+
+    .crtTopBtnf {
+        margin: 10px;
+    }
+
+    .crtBottom {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .crtProduct {
+        flex-direction: column;
+    }
+
+    .crtProdAmntWrp {
+        margin-top: 10px;
+    }
+}
+
+/*---------------------------------- Prooducts Cart ------------------------------------*/
