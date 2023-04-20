@@ -6,7 +6,7 @@ function cart() {
 
 function setCart() {
   console.log("entro?");
-  let badgeCart = document.getElementById("badge");
+  let badgeCart = domBadge;
   localStorage.setItem(
     "badgeCart",
     JSON.stringify(JSON.parse(localStorage.getItem("cart")).length)

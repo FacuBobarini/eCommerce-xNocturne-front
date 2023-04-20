@@ -27,7 +27,7 @@ async function renderProduct(product) {
           </div>
     </div>
     `;
-  return document.getElementById("productsContainer").appendChild(products);
+  return domProductsContainer.appendChild(products);
 }
 
 async function showProduct(id) {
